@@ -12,6 +12,7 @@ metadata:
 
   # Fetch the git-clone task from hub, we are able to reference later on it
   # with taskRef and it will automatically be embedded into our pipeline.
+  # test
     pipelinesascode.tekton.dev/task: "git-clone"
     pipelinesascode.tekton.dev/task-1: ".tekton/tasks/task-create-promote-pull-request.yaml"
     pipelinesascode.tekton.dev/task-2: ".tekton/tasks/task-argo-sync-and-wait.yaml"
