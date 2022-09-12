@@ -4,7 +4,7 @@ metadata:
   name: simple-pipeline-pac
 spec:
   params:
-  - default: http://gitea-devsecops-ci.apps.cluster-vjt4g.vjt4g.sandbox223.opentlc.com/gitea/spring-petclinic
+  - default: http://gitea-devsecops-ci.apps.cluster-wfc5s.wfc5s.sandbox2229.opentlc.com/gitea/spring-petclinic
     description: The application git repository
     name: APP_SOURCE_GIT
     type: string
@@ -12,7 +12,7 @@ spec:
     description: The application git revision
     name: APP_SOURCE_REVISION
     type: string
-  - default: http://gitea-devsecops-ci.apps.cluster-vjt4g.vjt4g.sandbox223.opentlc.com/gitea/spring-petclinic-config
+  - default: http://gitea-devsecops-ci.apps.cluster-wfc5s.wfc5s.sandbox2229.opentlc.com/gitea/spring-petclinic-config
     description: The application manifests git repository
     name: APP_MANIFESTS_GIT
     type: string
@@ -113,7 +113,7 @@ spec:
     - name: PATH_CONTEXT
       value: spring-petclinic/target
     - name: IMAGE_NAME
-      value: quay-registry-quay-quay-enterprise.apps.cluster-mqdnz.mqdnz.sandbox172.opentlc.com/openshift_devsecops-ci/spring-petclinic
+      value: quay-registry-quay-quay-enterprise.apps.cluster-l8dwz.l8dwz.sandbox191.opentlc.com/openshift_devsecops-ci/spring-petclinic
     - name: IMAGE_TAG
       value: $(params.APP_IMAGE_TAG)
     runAfter:
@@ -127,7 +127,7 @@ spec:
   - name: image-scan
     params:
     - name: image
-      value: quay-registry-quay-quay-enterprise.apps.cluster-mqdnz.mqdnz.sandbox172.opentlc.com/openshift_devsecops-ci/spring-petclinic
+      value: quay-registry-quay-quay-enterprise.apps.cluster-l8dwz.l8dwz.sandbox191.opentlc.com/openshift_devsecops-ci/spring-petclinic
     - name: rox_api_token
       value: acs-api-token
     - name: output_format
@@ -181,7 +181,7 @@ spec:
     - name: CURRENT_IMAGE
       value: quay.io/siamaksade/spring-petclinic:latest
     - name: NEW_IMAGE
-      value: quay-registry-quay-quay-enterprise.apps.cluster-mqdnz.mqdnz.sandbox172.opentlc.com/openshift_devsecops-ci/spring-petclinic
+      value: quay-registry-quay-quay-enterprise.apps.cluster-l8dwz.l8dwz.sandbox191.opentlc.com/openshift_devsecops-ci/spring-petclinic
     - name: NEW_DIGEST
       value: $(tasks.build-image.results.IMAGE_DIGEST)
     - name: KUSTOMIZATION_PATH
