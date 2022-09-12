@@ -8,7 +8,7 @@ spec:
     description: The application git repository
     name: APP_SOURCE_GIT
     type: string
-  - default: main
+  - default: master
     description: The application git revision
     name: APP_SOURCE_REVISION
     type: string
