@@ -41,6 +41,8 @@ spec:
   results:
   - description: Digest of the image just built.
     name: IMAGE_DIGEST
+  - description: URL of the image used by Tekton Chains to push the OCI images
+    name: IMAGE_URL    
   steps:
   - args:
     - |-
@@ -161,7 +163,7 @@ spec:
   - image: registry.redhat.io/rhel8/buildah@sha256:180c4d9849b6ab0e5465d30d4f3a77765cf0d852ca1cb1efb59d6e8c9f90d467
     name: digest-to-results
     resources: {}
-    script: cat $(workspaces.source.path)/image-digest | tee /tekton/results/IMAGE_DIGEST
+    script: cat $(workspaces.source.path)/image-digest | tee /tekton/results/IMAGE_DIGEST; echo quay-registry-quay-quay-enterprise.apps.cluster-l8dwz.l8dwz.sandbox191.opentlc.com/openshift_devsecops-ci/spring-petclinic > /tekton/results/IMAGE_URL 
   volumes:
   - emptyDir: {}
     name: varlibcontainers
