@@ -142,7 +142,7 @@ spec:
   - name: image-check
     params:
     - name: image
-      value: quay-registry-quay-quay-enterprise.apps.cluster-mqdnz.mqdnz.sandbox172.opentlc.com/openshift_devsecops-ci/spring-petclinic
+      value: quay-registry-quay-quay-enterprise.apps.cluster-l8dwz.l8dwz.sandbox191.opentlc.com/openshift_devsecops-ci/spring-petclinic
     - name: rox_api_token
       value: acs-api-token
     - name: image_digest
