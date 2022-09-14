@@ -120,7 +120,7 @@ spec:
     - syft-sbom
     taskRef:
       kind: Task
-      name: s2i-java-11-fixed
+      name: s2i-java-11
     workspaces:
     - name: source
       workspace: workspace
