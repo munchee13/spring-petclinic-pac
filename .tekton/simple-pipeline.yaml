@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: simple-pipeline-pac
+  name: devsecops-pipeline-pac
 spec:
   params:
   - default: http://gitea-devsecops-ci.apps.cluster-wfc5s.wfc5s.sandbox2229.opentlc.com/gitea/spring-petclinic
@@ -175,7 +175,7 @@ spec:
     - syft-sbom
     taskRef:
       kind: Task
-      name: s2i-java-11-fixed
+      name: s2i-java-11
     workspaces:
     - name: source
       workspace: workspace
