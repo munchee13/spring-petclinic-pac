@@ -48,7 +48,7 @@ Further documentation is provided [here](https://github.com/spring-projects/spri
 
 ## Working with Petclinic in your IDE
 
-### Prerequisites
+#### Prerequisites
 
 The following items should be installed in your system:
 
