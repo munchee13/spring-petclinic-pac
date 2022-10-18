@@ -82,7 +82,7 @@ spec:
         gitea_pwd = "$(params.GIT_PASSWORD)"
 
   
-        giteaURL = "http://gitea-devsecops-ci.apps.cluster-wfc5s.wfc5s.sandbox2229.opentlc.com"
+        giteaURL = "http://gitea-devsecops-ci.apps.cluster-c4lhj.c4lhj.sandbox1290.opentlc.com"
 
 
         branch_result = open("$(results.branch_name.path)")

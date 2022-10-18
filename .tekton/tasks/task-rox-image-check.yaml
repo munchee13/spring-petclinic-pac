@@ -8,7 +8,7 @@ spec:
         Secret containing the address:port tuple for StackRox Central (example -
         rox.stackrox.io:443)
       name: rox_central_endpoint
-      default: 'central-stackrox.apps.cluster-mqdnz.mqdnz.sandbox172.opentlc.com:443'
+      default: 'central-stackrox.apps.cluster-zqqrl.zqqrl.sandbox788.opentlc.com:443'
       type: string
     - description: Secret containing the StackRox API token with CI permissions
       name: rox_api_token
